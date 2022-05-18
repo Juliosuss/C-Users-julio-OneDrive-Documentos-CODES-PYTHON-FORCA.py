@@ -1,3 +1,4 @@
+import os
 import random
 vocabulario = ["alimento", "apartamento", 'linguagem', 'computador']
 palavra = random.choice(vocabulario)
@@ -8,6 +9,10 @@ print (f"Regras do Jogo: {nome}, você receberá uma palavra.")
 print ("Você deve digitar a letra que acha que contém na palavra.")
 print ("Você pode errar 6 vezes.")
 print ('Boa sorte!!!')
+
+
+print (input('\npressione enter para iniciar o game'))
+os.system ('cls')
 
 for letra in palavra:
     print('_', end= ' ')
@@ -57,6 +62,7 @@ elif palpite == "sair":
 else:
     print("Parabéns, você acertou! a palavra é", palavra )
 
+input ('\n pressione enter para sair')
 
 
 
